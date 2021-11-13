@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #parent {
+            padding: 100px;
+            width: 500px;
+            box-shadow: 0 0 0 1.5 rgb(153, 44, 44);
+            margin: 100px auto;
+            background-color: rgb(245, 235, 235);
+        }
+        p {
+            text-align: center;
+            padding-top: 10px;
+            color: crimson;
+            font-size: larger;
+        }
+      
+        button {
+            width: 100px;
+            height: 50px;
+            margin: 25px;
+            background-color: rgb(210, 219, 219);
+            color: black;
+        }
+    </style>
+
+    <script>
+        function gm() {
+           var pref = document.getElementById('pid')
+           pref.innerHTML = "Good Morning Anuj Kumar"
+           pref.style.color = "green"
+
+        }
+
+        function ge() {
+           var pref = document.getElementById('pid')
+           pref.innerHTML = "Good Evening Anuj Kumar"
+           pref.style.color = "blue"
+
+
+        }
+
+        function gn() {
+           var pref = document.getElementById('pid')
+           pref.innerHTML = "Good Night Anuj Kumar"
+           pref.style.color = "brown"
+           
+
+           
+
+        }
+
+        
+
+
+    
+    </script>
+</head>
+<body>
+    <div id="parent">
+
+
+           <p id="pid">Hello Anuj Kumar</p>
+
+        
+           <button onclick="gm()" id="gm">Good Morning</button>
+       
+           <button  onclick="ge()" id="ge">Good Evening</button>
+       
+           <button onclick="gn()" id="gn">Good Night</button>
+       
+      
+    </div>
+</body>
+</html>
